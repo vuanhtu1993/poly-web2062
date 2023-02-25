@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .error {
+            color: red;
+            font-size: small;
+        }
+    </style>
+</head>
+
+<body>
+<!--
+  This component uses @tailwindcss/forms
+
+  yarn add @tailwindcss/forms
+  npm install @tailwindcss/forms
+
+  plugins: [require('@tailwindcss/forms')]
+-->
+
+<section class="bg-gray-100">
+    <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2">
+        <div class="overflow-x-auto rounded-lg border border-gray-200">
+            <table class="min-w-full divide-y-2 divide-gray-200 text-sm">
+              <thead>
+                <tr>
+                  <th
+                    class="whitespace-nowrap px-4 py-2 text-left font-medium text-gray-900"
+                  >
+                    STT
+                  </th>
+                  <th
+                    class="whitespace-nowrap px-4 py-2 text-left font-medium text-gray-900"
+                  >
+                    Tên
+                  </th>
+                  <th
+                    class="whitespace-nowrap px-4 py-2 text-left font-medium text-gray-900"
+                  >
+                    Giá
+                  </th>
+                  <th
+                    class="whitespace-nowrap px-4 py-2 text-left font-medium text-gray-900"
+                  >
+                    Thao tác
+                  </th>
+                </tr>
+              </thead>
+          
+              <tbody class="divide-y divide-gray-200">
+                <!-- In dữ liệu vào thân table -->
+              </tbody>
+            </table>
+          </div>          
+  
+        <div class="rounded-lg bg-white p-8 shadow-lg">
+          <form id="form" class="space-y-4">
+            <div>
+              <label class="" for="name">Tên</label>
+              <input
+                class="w-full rounded-lg border-gray-200 p-3 text-sm"
+                placeholder="Tên"
+                type="text"
+                id="name"
+              />
+              <div class="error error-name"></div>
+            </div>
+  
+            <div>
+                <label class="" for="email">Giá</label>
+                <input
+                  class="w-full rounded-lg border-gray-200 p-3 text-sm"
+                  placeholder="Email address"
+                  type="number"
+                  id="price"
+                />
+              </div>
+              <div class="error error-price"></div>
+            <div>
+              <label class="" for="message">Mô tả</label>
+  
+              <textarea
+                class="w-full rounded-lg border-gray-200 p-3 text-sm"
+                placeholder="Mô tả"
+                rows="8"
+                id="description"
+              ></textarea>
+              <div class="error error-description"></div>
+            </div>
+  
+            <div class="mt-4">
+              <button
+                type="submit"
+                class="inline-block w-full rounded-lg bg-black px-5 py-3 font-medium text-white sm:w-auto"
+              >
+                Thêm mới
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
