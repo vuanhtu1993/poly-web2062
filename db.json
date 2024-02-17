@@ -1,34 +1,18 @@
 {
-  "products": [
-    {
-      "id": 1,
-      "name": "Product 2",
-      "desc": "Description 2",
-      "image": "https://picsum.photos/200/200"
-    },
-    {
-      "id": 2,
-      "name": "Product 2",
-      "desc": "Description 2",
-      "image": "https://picsum.photos/200/200"
-    },
-    {
-      "id": 3,
-      "name": "Product 3",
-      "desc": "Description 3",
-      "image": "https://picsum.photos/200/200"
-    },
-    {
-      "id": 4,
-      "name": "hhhhhh",
-      "desc": "ggggg",
-      "image": "https://picsum.photos/200/200"
-    },
-    {
-      "name": "kkkkkkk",
-      "desc": "ttttttttt",
-      "image": "https://picsum.photos/200/200",
-      "id": 5
-    }
-  ]
+    "products": [
+        {
+            "name": "San pham 1",
+            "price": 100000,
+            "description": "Mo ta san pham 1",
+            "image": "https://picsum.photos/200/300",
+            "id": 1
+        },
+        {
+            "name": "San pham 2",
+            "price": 200000,
+            "description": "Mo ta san pham 2",
+            "image": "https://picsum.photos/200/300",
+            "id": 2
+        }
+    ]
 }
